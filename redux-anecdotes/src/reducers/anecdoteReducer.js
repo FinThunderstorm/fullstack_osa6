@@ -32,6 +32,7 @@ const anecdoteReducer = (state = initialState, action) => {
         ...anecdoteToChange,
         votes: votes + 1
       }
+      
       return state.map(anecdote => 
         anecdote.id !== id ? anecdote : changedAnecdote
       )

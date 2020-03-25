@@ -1,4 +1,4 @@
-const initialState = 'tervepä terve ja heipä hei'
+const initialState = ''
 
 const notificationReducer = (state = initialState, action) => {
   console.log('state now: ', state)
@@ -6,7 +6,7 @@ const notificationReducer = (state = initialState, action) => {
 
   switch(action.type) {
     case 'NOTIFICATION':
-      state = action.data.notification
+      state = action.data.message
       return state
 
     case 'EMPTY':
@@ -19,6 +19,7 @@ const notificationReducer = (state = initialState, action) => {
 }
 
 export const notify = (message) => {
+  console.log('notify: ',message)
   return {
     type: 'NOTIFICATION',
     data: { message }
@@ -27,7 +28,10 @@ export const notify = (message) => {
 
 export const empty = () => {
   return {
-    type: 'EMPTY'
+    type: 'EMPTY',
+    data: {
+      message: ''
+    }
   }
 }
 
