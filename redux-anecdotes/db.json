@@ -52,8 +52,18 @@
     },
     {
       "content": "Alokas Nönnönnöö...",
-      "votes": 2,
+      "votes": 5,
       "id": "RkF6SkW"
+    },
+    {
+      "content": "Teppo on Matti ja Matti on Teppo.",
+      "votes": 0,
+      "id": "X4XxqRg"
+    },
+    {
+      "content": "Matti on Teppo ja Teppo on Matti. Seppo kuuluu joukkoon.",
+      "votes": 0,
+      "id": "bJwUvZp"
     }
   ]
 }
