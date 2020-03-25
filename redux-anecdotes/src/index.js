@@ -10,3 +10,5 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 )
+
+//6.19 & 6.20
